@@ -88,4 +88,13 @@
 
 .filter__sort__menu {
     display: flex;
+    justify-content: space-between;
+}
+
+.arrow_after::after {
+    content: url("../imgs/catalog/sort__arrow.svg");
+}
+
+.sort__switchers {
+    flex-grow: 2;
 }
