@@ -1,0 +1,15 @@
+.header {
+  background: #222222;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__search {
+  margin-left: 41px;
+}
+
+.header__right img:not(:last-child) {
+  margin-right: 33px;
+}

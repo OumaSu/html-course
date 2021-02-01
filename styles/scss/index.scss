@@ -1,44 +1,10 @@
-$siteWidth: 1140px;
-$siteCenter: $siteWidth / 2;
-$defaultTextColor: #222222;
-$primalColor: #f16d7f;
-
-@mixin defaultFontStyles {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-.center {
-    padding-left: calc(50% - #{$siteCenter});
-    padding-right: calc(50% - #{$siteCenter});
-}
-
-.header {
-    background: $defaultTextColor;
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header__search {
-    margin-left: 41px;
-}
-
-.header__right img:not(:last-child) {
-    margin-right: 33px;
-}
+@import '_basicConst';
+@import '_mixin';
+@import '_footer';
+@import '_topHeader';
+@import '_featuredList';
+@import '_servicesBottom';
+@import '_subscribeBottom';
 
 .promo {
     background: #f1e4e6;
@@ -146,73 +112,6 @@ $primalColor: #f16d7f;
     text-align: center;
 }
 
-.featured__block {
-    padding-top: 97px;
-    position: relative;
-}
-
-.featured__title {
-    @include defaultFontStyles;
-    font-size: 30px;
-    line-height: 36px;
-    color: $defaultTextColor;
-}
-
-.featured__description {
-    padding-top: 6px;
-    @include defaultFontStyles;
-    font-size: 14px;
-    line-height: 17px;
-    color: #9f9f9f;
-}
-
-.featured__item {
-    width: 360px;
-    background: #f8f8f8;
-    border: $defaultTextColor;
-    margin-bottom: 30px;
-}
-
-.featured__item > img:hover {
-    filter: brightness(25%);
-}
-
-.featured__item__title {
-    padding-left: 18px;
-    padding-bottom: 12.65px;
-    @include defaultFontStyles;
-    font-size: 13px;
-    line-height: 16px;
-    color: #000000;
-}
-
-.featured__item_description {
-    padding-left: 18px;
-    padding-bottom: 18px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #5d5d5d;
-}
-
-.featured__item__price {
-    padding-left: 18.41px;
-    padding-bottom: 20px;
-    @include defaultFontStyles;
-    font-size: 16px;
-    line-height: 19px;
-    color: $primalColor;
-}
-
-.featured__list {
-    padding-top: 48px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 .browse__all__button {
     @include defaultFontStyles;
     font-size: 16px;
@@ -230,50 +129,6 @@ $primalColor: #f16d7f;
 .browse__all__button:hover {
     background-color: #f26376;
     color: #ffffff;
-}
-
-.services {
-    height: 341px;
-    background: #222224;
-    display: flex;
-    justify-content: space-around;
-}
-
-.service__item {
-    width: 360px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.subscribe {
-    height: 448px;
-    background-image: url("../../imgs/subscribe__background.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer {
-    height: 74px;
-    background: #222224;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.all__rights {
-    @include defaultFontStyles;
-    font-size: 16px;
-    line-height: 19px;
-    color: #fbfbfb;
-}
-
-.social__list {
-    display: flex;
-    gap: 7.5px;
 }
 
 .service__title {
@@ -302,81 +157,3 @@ $primalColor: #f16d7f;
     padding-bottom: 28px;
 }
 
-.subscribe__info {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.subscribe__avatar {
-    position: relative;
-}
-
-.subscribe__mail {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.subscribe__description {
-    margin-left: auto;
-    margin-right: auto;
-    width: 360px;
-    @include defaultFontStyles;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #222224;
-}
-
-.subscribe__title {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 167.2%;
-    text-align: center;
-    color: #222224;
-}
-
-.subscribe__subtitle {
-    text-align: center;
-}
-
-.mail__input > input {
-    margin-left: auto;
-    margin-right: auto;
-    width: 256px;
-    background: #e1e1e1;
-    border-radius: 24px 0 0 24px;
-    height: 49px;
-    outline: none;
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 17px;
-    color: #222224;
-    opacity: 0.67;
-    border: none;
-    padding-left: 22px;
-    margin-top: 27px;
-}
-
-.mail__input > button {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    background: $primalColor;
-    height: 49px;
-    border-radius: 0 24px 24px 0;
-    outline: none;
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    color: #ffffff;
-    border: none;
-}

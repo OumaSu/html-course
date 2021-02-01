@@ -1,52 +1,12 @@
-$defaultTextColor: #222222;
-$primalColor: #F16D7F;
-
-@mixin defaultFontStyles {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-}
-
-.nav__breadcrumb__list>li+li::before {
-    content: " / ";
-}
-
-.nav__breadcrumb__item {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #636363;
-}
-
-.nav__breadcrumb__item:last-child {
-    color: $primalColor;
-}
-
-.nav__current__title {
-    color: $primalColor;
-    @include defaultFontStyles;
-    font-size: 24px;
-    line-height: 29px;
-}
-
-.nav__section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav__breadcrumb__list {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-}
-
-.nav__section {
-    background: #F8F3F4;
-    height: 148px;
-}
+@import '_basicConst';
+@import '_mixin';
+@import '_footer';
+@import '_topHeader';
+@import '_newArrivalsNavbar';
+@import '_featuredList';
+@import '_servicesBottom';
+@import '_subscribeBottom';
+@import '_sortFilters';
 
 .bottom__pagination {
     @include defaultFontStyles;
@@ -63,26 +23,6 @@ $primalColor: #F16D7F;
     margin-left: 465px
 }
 
-.sort__switchers>div>p {
-    @include defaultFontStyles;
-    font-size: 14px;
-    line-height: 17px;
-    color: #6F6E6E;
-}
-
-.sort__switchers {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 27.98px;
-}
-
-.sort__switchers>div {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
 .filter__switcher {
     display: flex;
     flex-direction: row;
@@ -92,10 +32,6 @@ $primalColor: #F16D7F;
 .filter__sort__menu {
     display: flex;
     justify-content: space-between;
-}
-
-.arrow_after::after {
-    content: url("../imgs/catalog/sort__arrow.svg");
 }
 
 .sort__switchers {

@@ -1,0 +1,88 @@
+.subscribe {
+    height: 448px;
+    background-image: url("../../imgs/subscribe__background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe__info {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subscribe__avatar {
+    position: relative;
+}
+
+.subscribe__mail {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subscribe__description {
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
+    @include defaultFontStyles;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe__title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe__subtitle {
+    text-align: center;
+}
+
+.mail__input > input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 256px;
+    background: #e1e1e1;
+    border-radius: 24px 0 0 24px;
+    height: 49px;
+    outline: none;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222224;
+    opacity: 0.67;
+    border: none;
+    padding-left: 22px;
+    margin-top: 27px;
+}
+
+.mail__input > button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    background: $primalColor;
+    height: 49px;
+    border-radius: 0 24px 24px 0;
+    outline: none;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+}
