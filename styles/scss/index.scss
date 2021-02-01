@@ -1,3 +1,14 @@
+$siteWidth: 1140px;
+$siteCenter: $siteWidth / 2;
+$defaultTextColor: #222222;
+$primalColor: #f16d7f;
+
+@mixin defaultFontStyles {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +20,12 @@
 }
 
 .center {
-    padding-left: calc(50% - 570px);
-    padding-right: calc(50% - 570px);
+    padding-left: calc(50% - #{$siteCenter});
+    padding-right: calc(50% - #{$siteCenter});
 }
 
 .header {
-    background: #222222;
+    background: $defaultTextColor;
     height: 75px;
     display: flex;
     align-items: center;
@@ -30,7 +41,7 @@
 }
 
 .promo {
-    background: #F1E4E6;
+    background: #f1e4e6;
     display: flex;
     padding-left: calc(50% - 800px);
     padding-right: calc(50% - 800px);
@@ -51,7 +62,7 @@
 
 .promo__content {
     margin-top: 40%;
-    border-left: 12px solid #F16D7F;
+    border-left: 12px solid $primalColor;
     padding-left: 16px;
 }
 
@@ -61,7 +72,7 @@
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
-    color: #222222;
+    color: $defaultTextColor;
 }
 
 .promo__info {
@@ -71,11 +82,11 @@
     font-size: 32px;
     line-height: 38px;
 
-    color: #222222;
+    color: $defaultTextColor;
 }
 
 .select {
-    color: #F16D7F;
+    color: $primalColor;
 }
 
 .sale {
@@ -113,13 +124,11 @@
 }
 
 .sale__p {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
+    @include defaultFontStyles;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .sale__heading {
@@ -130,7 +139,7 @@
     line-height: 29px;
     text-align: center;
 
-    color: #F16D7F;
+    color: $primalColor;
 }
 
 .center__text {
@@ -143,41 +152,35 @@
 }
 
 .featured__title {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
+    @include defaultFontStyles;
     font-size: 30px;
     line-height: 36px;
-    color: #222222;
+    color: $defaultTextColor;
 }
 
 .featured__description {
     padding-top: 6px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
+    @include defaultFontStyles;
     font-size: 14px;
     line-height: 17px;
-    color: #9F9F9F;
+    color: #9f9f9f;
 }
 
 .featured__item {
     width: 360px;
-    background: #F8F8F8;
-    border: #222222;
+    background: #f8f8f8;
+    border: $defaultTextColor;
     margin-bottom: 30px;
 }
 
-.featured__item>img:hover {
+.featured__item > img:hover {
     filter: brightness(25%);
 }
 
 .featured__item__title {
     padding-left: 18px;
     padding-bottom: 12.65px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
+    @include defaultFontStyles;
     font-size: 13px;
     line-height: 16px;
     color: #000000;
@@ -191,18 +194,16 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
-    color: #5D5D5D;
+    color: #5d5d5d;
 }
 
 .featured__item__price {
     padding-left: 18.41px;
     padding-bottom: 20px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
+    @include defaultFontStyles;
     font-size: 16px;
     line-height: 19px;
-    color: #F16D7F;
+    color: $primalColor;
 }
 
 .featured__list {
@@ -213,24 +214,22 @@
 }
 
 .browse__all__button {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
+    @include defaultFontStyles;
     font-size: 16px;
     line-height: 19px;
-    color: #F26376;
+    color: #f26376;
     text-align: center;
     margin-top: 18.5px;
     padding-top: 14.5px;
     padding-bottom: 13.5px;
-    border: 1px solid #FF6A6A;
+    border: 1px solid #ff6a6a;
     width: 211px;
-    margin-left: 465px
+    margin-left: 465px;
 }
 
 .browse__all__button:hover {
-    background-color: #F26376;
-    color: #FFFFFF;
+    background-color: #f26376;
+    color: #ffffff;
 }
 
 .services {
@@ -249,7 +248,7 @@
 
 .subscribe {
     height: 448px;
-    background-image: url("../imgs/subscribe__background.svg");
+    background-image: url("../../imgs/subscribe__background.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -266,12 +265,10 @@
 }
 
 .all__rights {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
+    @include defaultFontStyles;
     font-size: 16px;
     line-height: 19px;
-    color: #FBFBFB;
+    color: #fbfbfb;
 }
 
 .social__list {
@@ -280,12 +277,10 @@
 }
 
 .service__title {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
+    @include defaultFontStyles;
     font-size: 19.96px;
     line-height: 24px;
-    color: #FBFBFB;
+    color: #fbfbfb;
     text-align: center;
     padding-bottom: 16px;
 }
@@ -297,13 +292,13 @@
     font-size: 13.972px;
     line-height: 17px;
     text-align: center;
-    color: #FBFBFB;
+    color: #fbfbfb;
     text-align: center;
 }
 
 .service__img {
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     padding-bottom: 28px;
 }
 
@@ -331,9 +326,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 360px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
+    @include defaultFontStyles;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -354,11 +347,11 @@
     text-align: center;
 }
 
-.mail__input>input{
+.mail__input > input {
     margin-left: auto;
     margin-right: auto;
     width: 256px;
-    background: #E1E1E1;
+    background: #e1e1e1;
     border-radius: 24px 0 0 24px;
     height: 49px;
     outline: none;
@@ -372,11 +365,11 @@
     margin-top: 27px;
 }
 
-.mail__input>button{
+.mail__input > button {
     margin-left: auto;
     margin-right: auto;
     width: 100px;
-    background: #F16D7F;
+    background: $primalColor;
     height: 49px;
     border-radius: 0 24px 24px 0;
     outline: none;
@@ -384,6 +377,6 @@
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
     border: none;
 }

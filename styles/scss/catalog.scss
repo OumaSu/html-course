@@ -1,4 +1,13 @@
-.nav__breadcrumb__list>li + li::before {
+$defaultTextColor: #222222;
+$primalColor: #F16D7F;
+
+@mixin defaultFontStyles {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.nav__breadcrumb__list>li+li::before {
     content: " / ";
 }
 
@@ -12,14 +21,12 @@
 }
 
 .nav__breadcrumb__item:last-child {
-    color: #F16D7F;
+    color: $primalColor;
 }
 
 .nav__current__title {
-    color: #F16D7F;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
+    color: $primalColor;
+    @include defaultFontStyles;
     font-size: 24px;
     line-height: 29px;
 }
@@ -42,9 +49,7 @@
 }
 
 .bottom__pagination {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
+    @include defaultFontStyles;
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
@@ -59,9 +64,7 @@
 }
 
 .sort__switchers>div>p {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
+    @include defaultFontStyles;
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
