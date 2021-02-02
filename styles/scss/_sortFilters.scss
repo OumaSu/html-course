@@ -1,0 +1,23 @@
+.sort__switchers>div>p {
+    @include defaultFontStyles;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.sort__switchers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 27.98px;
+}
+
+.sort__switchers>div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.arrow_after::after {
+    content: url("../../imgs/catalog/sort__arrow.svg");
+}

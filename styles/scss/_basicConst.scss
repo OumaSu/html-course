@@ -1,0 +1,24 @@
+$siteWidth: 1140px;
+$siteCenter: $siteWidth / 2;
+$defaultTextColor: #222222;
+$primalColor: #f16d7f;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.center {
+    padding-left: calc(50% - #{$siteCenter});
+    padding-right: calc(50% - #{$siteCenter});
+}
+
+.centralize {
+    margin-left: auto;
+    margin-right: auto;
+}

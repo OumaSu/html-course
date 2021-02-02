@@ -1,0 +1,39 @@
+@import '_basicConst';
+@import '_mixin';
+@import '_footer';
+@import '_topHeader';
+@import '_newArrivalsNavbar';
+@import '_featuredList';
+@import '_servicesBottom';
+@import '_subscribeBottom';
+@import '_sortFilters';
+
+.bottom__pagination {
+    @include defaultFontStyles;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 96px;
+    padding-top: 14.5px;
+    padding-bottom: 13.5px;
+    border: 1px solid #FF6A6A;
+    width: 211px;
+    margin-left: 465px
+}
+
+.filter__switcher {
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+}
+
+.filter__sort__menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sort__switchers {
+    flex-grow: 2;
+}

@@ -1,0 +1,44 @@
+.nav__breadcrumb__list>li+li::before {
+    content: " / ";
+}
+
+.nav__breadcrumb__item {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.nav__breadcrumb__item:last-child {
+    color: $primalColor;
+}
+
+.nav__current__title {
+    color: $primalColor;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.nav__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__breadcrumb__list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.nav__section {
+    background: #F8F3F4;
+    height: 148px;
+}
+
+@import '_basicConst'

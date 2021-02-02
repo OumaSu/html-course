@@ -1,0 +1,39 @@
+.services {
+    height: 341px;
+    background: #222224;
+    display: flex;
+    justify-content: space-around;
+}
+
+.service__item {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service__title {
+    @include defaultFontStyles;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #fbfbfb;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.service__desription {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #fbfbfb;
+    text-align: center;
+}
+
+.service__img {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 28px;
+}
