@@ -1,0 +1,149 @@
+@import '_basicConst';
+@import '_mixin';
+@import '_footer';
+@import '_topHeader';
+@import '_newArrivalsNavbar';
+@import '_featuredList';
+@import '_servicesBottom';
+@import '_subscribeBottom';
+
+.main__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.registration__form {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    margin-top: 64px;
+
+}
+
+.name__block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &> input {
+        width: 360px;
+        height: 45px;
+        padding-left: 16.73px;
+    }
+}
+
+.title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;    
+}
+
+.gender__block {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 33.5px;
+    margin-bottom: 35px;
+}
+
+.block__radio {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    &> p {
+       font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        color: #000000; 
+    }
+}
+
+.authInfo__block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &> input {
+        width: 360px;
+        height: 45px;
+        padding-left: 16.73px;
+    }
+}
+
+.password__hint {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;    
+}
+
+.submit__button {
+    margin-top: 39px;
+    cursor: pointer;
+    gap: 20px;
+    padding: 16px 0 17px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 167px;
+    background-color: $primalColor;
+    &> p {
+        @include defaultFontStyles;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+}
+
+.perks__block {
+    margin-top: 64px;
+    width: 652px;
+    margin-bottom: 277px;
+}
+
+.perks__title{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.perks__subtitle {
+    margin-top: 22px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.perk__list {
+    margin-top: 21px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.list__item {
+    display: flex;
+    flex-direction: row;
+    gap: 23.08px;
+    &> p {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+    }
+}
