@@ -468,9 +468,8 @@
 }
 
 .add__to__cart__button {
-  background-image: url(../../imgs/product/cart.svg);
-  background-repeat: no-repeat;
-  background-position: left, center;
+  display: flex;
+  justify-content: space-evenly;
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
@@ -483,6 +482,12 @@
   padding-bottom: 13.5px;
   border: 1px solid #ff6a6a;
   width: 211px;
+  transition: all 0.5s ease-out;
+}
+
+.add__to__cart__button:hover {
+  background-color: #f26376;
+  color: #ffffff;
 }
 
 .subscribe {
